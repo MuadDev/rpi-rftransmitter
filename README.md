@@ -39,3 +39,14 @@ Options:
   -t <ms>, --playtime <ms>      The total playtime in milliseconds (default: 500)
   ```
   
+### requirements
+WiringPi: http://wiringpi.com/download-and-install/
+
+If this requirement has not been met the following error will show:
+```
+ #include <wiringPi.h>
+                      ^
+compilation terminated.
+Makefile:25: recipe for target 'rfrecorder' failed
+make: *** [rfrecorder] Error 1
+```
