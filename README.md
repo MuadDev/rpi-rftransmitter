@@ -39,7 +39,7 @@ Options:
   -t <ms>, --playtime <ms>      The total playtime in milliseconds (default: 500)
   ```
   
-### requirements
+## requirements
 WiringPi: http://wiringpi.com/download-and-install/
 
 If this requirement has not been met the following error will show:
@@ -50,3 +50,16 @@ compilation terminated.
 Makefile:25: recipe for target 'rfrecorder' failed
 make: *** [rfrecorder] Error 1
 ```
+
+## remotes
+Currently the codes for the following remotes are added:
+- A (KlikAanKlikUit)
+- B (Flamingo)
+
+These are recorded using the command `rfrecord` and the following hints:
+- Use data wiring pi pin 3 instead of 2
+- Turn off the wireless keyboard & mouse
+- Put the Pi in the bedroom
+- Keep the controller almost against the receiver
+- Remove the RF transmitter
+- When recording pay attention to the mentioned command size, this should be (around) 132 and not (around) 4. The former is an actual signal, the latter means only noise is captured.
